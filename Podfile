@@ -4,6 +4,14 @@
 source 'https://github.com/xianrenzhuimeng/WMSpec.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['APPLICATION_EXTENSION_API_ONLY'] = 'No'
+    end
+  end
+end
+
 target 'WMBase' do
   # Uncomment this line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
