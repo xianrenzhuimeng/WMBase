@@ -1,0 +1,7 @@
+WMBase.xcodeproj/xcuserdata/
+WMBase.xcworkspace/
+Pods/
+*.swp
+Podfile.lock
+.DS_Store
+WMBase.xcodeproj/project.xcworkspace/xcuserdata/
