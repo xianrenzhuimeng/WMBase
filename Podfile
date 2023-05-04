@@ -14,7 +14,6 @@ target 'WMBase' do
   pod 'YYKit'
   pod 'MBProgressHUD'
   pod 'SDWebImage'
-  #猿题库的网络请求
   pod 'YTKNetwork'
   pod 'QMUIKit'
   pod 'Toast'

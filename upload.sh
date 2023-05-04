@@ -1,1 +1,1 @@
-pod repo push WMSpec WMBase.podspec --verbose --allow-warnings
+pod repo push WMSpec WMBase.podspec --verbose --use-libraries --allow-warnings

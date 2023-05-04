@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WMBase"
-  s.version      = "1.0.2"
-  s.summary      = "WMBase."
+  s.version      = "1.0.3"
+  s.summary      = "WMBaseSDk"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "11.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -145,6 +145,5 @@ Pod::Spec.new do |s|
   s.dependency "YTKNetwork"
   s.dependency "QMUIKit"
   s.dependency "Toast"
-
 
 end
