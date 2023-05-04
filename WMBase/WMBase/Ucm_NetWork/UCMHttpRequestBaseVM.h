@@ -13,8 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol UCM_baseVMprotocol <NSObject>
 ///获取网络请求的回调
-//-(void)pro_reponsData:(BOOL)sucess response:(UCMHttpRequestResponse *)responsDate;
-///获取解析的网络回调
 -(void)pro_respnsParseData:(UCMHttpRequestResponse *)response
                    arrData:(NSMutableArray *)arrData
                    showMsg:(BOOL)is_showmsg
@@ -23,6 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
                   has_more:(BOOL)has_more
                       mark:(NSString *)mark
                extend_info:(NSDictionary *)extend_info;
+
+
+///batch 网络请求的代理
+-(void)pro_batchResponAry:(NSArray <UCMHttpRequestResponse *>*)responseAry success:(BOOL)success modelData:(NSMutableArray *_Nullable)modelAry;
 
 @end
 
@@ -60,6 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param response 数据源
 - (void)ucm_confignormalnetworkfailwithresponse:(UCMHttpRequestResponse *)response;
 
+-(void)ucm_batch_configNewsReposeAry:(NSArray <UCMHttpRequestResponse *>*)responseAry success:(BOOL)success modelData:(NSMutableArray *_Nullable)modelAry ;
 
 #pragma mark - **************** 解析后VM回传给VC ****************
 /// @param response 数据源
@@ -104,7 +107,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 #pragma mark - **************** 多个网络请求 ****************
-/// 多个网络请求
+/// Batch多个网络请求
+/// @param requsetAry 请求组
+-(void)ucm_batchRequestApi:(NSArray *)requsetAry;
+/// Batch多个网络请求
 /// @param apis 请求组
 /// @param complete 回调
 - (void)ucm_batchrequsetsforapis:(NSArray  *)apis comple:(void(^)(BOOL success,id object))complete;

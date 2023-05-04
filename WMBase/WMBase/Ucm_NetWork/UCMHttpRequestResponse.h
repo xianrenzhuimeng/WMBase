@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Current_normalTool.h"
 @class UCMHttpRequestBaseVM;
 NS_ASSUME_NONNULL_BEGIN
 ///请求状态

@@ -77,6 +77,11 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param mark 标示
 -(void)ucm_vcResponstFailInfo:(UCMHttpRequestResponse *)response mark:(NSString *)mark;
 
+/// batch ResponseAllData
+/// @param sucess sucess description
+/// @param responseAry responseAry description
+-(void)ucm_batchResponseAry:(NSArray <UCMHttpRequestResponse *>*)responseAry success:(BOOL)success modelData:(NSMutableArray *_Nullable)modelAry;
+
 #pragma mark - **************** TooL ****************
 ///强制取消当前页面的所有网络请求
 -(void)xxx_AllRequsetStop;

@@ -14,7 +14,6 @@
     return [[VMclass alloc]init];
 }
 
-
 - (void)ucm_requestApi:(UCMHttpRequest *)api {
     api.ignoreCache = YES;
     if ([api loadCacheWithError:nil]) {
@@ -41,8 +40,8 @@
     [api ucm_startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
         UCMHttpRequestResponse *response = [UCMHttpRequestResponse ucm_responseWithRequest:request];
         id dic = response.ucm_responseObject;
-        response.ucm_updatetype = api.ucm_updatetype;
         NSLog(@"%@ ------ %@",request,dic);
+        response.ucm_updatetype = api.ucm_updatetype;
         if (updatessss == 0) { //只更新本地数据，不回调到应用内
             return;
         }
@@ -135,6 +134,11 @@
 
 
 #pragma mark - ****************  Requeset批处理网络请求 ****************
+-(void)ucm_batchRequestApi:(NSArray *)requsetAry{
+    YTKBatchRequest *batchRequest = [[YTKBatchRequest alloc] initWithRequestArray:requsetAry];
+    batchRequest.delegate = self;
+    [batchRequest start];
+}
 - (void)ucm_batchrequsetsforapis:(NSArray *)apis comple:(void(^)(BOOL success,id object))complete{
     self.complete = complete;
     YTKBatchRequest *batchRequest = [[YTKBatchRequest alloc] initWithRequestArray:apis];
@@ -147,10 +151,12 @@
 ///  @param batchRequest The corresponding batch request.
 - (void)batchRequestFinished:(YTKBatchRequest *)batchRequest {
      NSArray *requests = batchRequest.requestArray;
+    NSMutableArray <UCMHttpRequestResponse *>*responseAry = [self ucm_bathRqusestresponse:requests];
+
+    [self ucm_bactch_Confignormalnetworksuccesswithresponse:responseAry isSucess:YES];
     if (self.complete) {
-        NSMutableArray *arr = [self ucm_zhuanghuanresponse:requests];
         NSLog(@"sdadasdasdsadasdsadsadasdasdasdasdasd");
-        self.complete(YES,arr);
+        self.complete(YES,responseAry);
     }
 }
 
@@ -159,31 +165,45 @@
 ///  @param batchRequest The corresponding batch request.
 - (void)batchRequestFailed:(YTKBatchRequest *)batchRequest {
     NSArray *requests = batchRequest.requestArray;
-    for (UCMHttpRequest *request in requests) {
-        UCMHttpRequestResponse *resp =  [self ucm_configreponse:request];
-        NSLog(@"%@",resp.ucm_responseObject);
-    }
+    NSMutableArray *responseAry = [self ucm_bathRqusestresponse:requests];
+    [self ucm_bactch_Confignormalnetworksuccesswithresponse:responseAry isSucess:NO];
     if (self.complete) {
-        self.complete(NO, batchRequest);
+        self.complete(NO, responseAry);
     }
 }
-
-
+#pragma mark - **************** batch 成功重写 ****************
+- (void)ucm_bactch_Confignormalnetworksuccesswithresponse:(NSArray <UCMHttpRequestResponse *>*)responseAry isSucess:(BOOL)sucess{
+    [self ucm_batch_configNewsReposeAry:responseAry success:sucess modelData:[NSMutableArray array]];
+}
+-(void)ucm_batch_configNewsReposeAry:(NSArray <UCMHttpRequestResponse *>*)responseAry success:(BOOL)success modelData:(NSMutableArray *_Nullable)modelAry {
+    if([self.delegate respondsToSelector:@selector(pro_batchResponAry:success:modelData:)]){
+        [self.delegate pro_batchResponAry:responseAry success:success modelData:modelAry];
+    }
+    
+}
 
 //TODO:tool 私有方法
-- (NSMutableArray *)ucm_zhuanghuanresponse:(NSArray *)arr {
-    NSMutableArray *responses = [NSMutableArray new];
+- (NSMutableArray *)ucm_bathRqusestresponse:(NSArray *)arr {
+    NSMutableArray *responseAry = [NSMutableArray new];
     for (UCMHttpRequest *request in arr) {
-        UCMHttpRequestResponse *resp =  [self ucm_configreponse:request];
-        [responses addObject:resp];
+        UCMHttpRequestResponse *response =  [UCMHttpRequestResponse ucm_responseWithRequest:request];
+        id dic = response.ucm_responseObject;
+        NSLog(@"%@ ------ %@",request,dic);
+        response.ucm_updatetype = request.ucm_updatetype;
+        if (response.ucm_serverResponseStatusCode == 200){
+            response.ucm_success = YES;;
+        }else{
+            response.ucm_success = NO;
+        }
+        [responseAry addObject:response];
     }
-    return responses;
+    return responseAry;
 }
 
+#pragma mark - **************** tool ****************
 - (UCMHttpRequestResponse *)ucm_configreponse:(UCMHttpRequest *)request {
     return [self ucm_configreponse:request cache:NO];
 }
-
 - (UCMHttpRequestResponse *)ucm_configreponse:(UCMHttpRequest *)request cache:(BOOL)cache{
     UCMHttpRequestResponse *response ;
     if (cache) {

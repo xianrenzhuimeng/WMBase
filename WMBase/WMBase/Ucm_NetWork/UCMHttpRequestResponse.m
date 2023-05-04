@@ -7,6 +7,8 @@
 
 #import "UCMHttpRequestResponse.h"
 #import "UCMHttpRequest.h"
+#import <Toast/Toast.h>
+
 
 @implementation UCMHttpRequestResponse
 + (UCMHttpRequestResponse *)ucm_responseWithRequest:(UCMHttpRequest *)request {
@@ -70,15 +72,12 @@
             self.ucm_serverResponseStatusCode == 1012) {
             self.ucm_responseStatusType = ucm_ResponseStatusTypeLoginOut;
         }
-        if ([Current_normalTool isBlankString:self.ucm_responseMessage] &&
-            [Current_normalTool isBlankString:request.responseObject[@"code"]]) {
-            self.ucm_responseStatusType = ucm_ResponseStatusTypeTimeOut;
-        }
+
         if ([self ucm_isAlert]) {
             [self ucm_alectSuccessMessage];
         }
     }else{
-        self.ucm_serverResponseStatusCode = request ucm_serverResponseStatusCode;
+        self.ucm_serverResponseStatusCode = request.ucm_serverResponseStatusCode;
         self.ucm_success = NO;
         NSLog(@"%ld",request.ucm_serverResponseStatusCode);
         if (request.ucm_serverResponseStatusCode == 0) {
@@ -102,7 +101,6 @@
             self.ucm_serverResponseStatusCode = ucm_ResponseStatusTypeNoNotWork;
         }
         
-        [[Current_normalTool topViewController].view makeToast:self.ucm_responseMessage duration:1.5 position:CSToastPositionCenter];
     }
 }
 

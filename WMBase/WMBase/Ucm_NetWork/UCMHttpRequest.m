@@ -6,6 +6,7 @@
 //
 
 #import "UCMHttpRequest.h"
+#import "KWLoginedManager.h"
 @interface UCMHttpRequest()
 /// 响应数据的返回状态码
 @property (nonatomic, readwrite, assign)NSInteger ucm_serverResponseStatusCode;
@@ -48,10 +49,9 @@
 
 - (NSDictionary<NSString *,NSString *> *)requestHeaderFieldValueDictionary {
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-    //wm_todo 重写登录的Model
-//    if (![[UC_CommonmoduleNetWorkTool judgeUserIsLogin] isEqualToString:@""]) {
-//        [dic setValue:[UC_CommonmoduleNetWorkTool judgeUserIsLogin] forKey:@"token"];
-//    }
+    if (![[KWLoginedManager.shareInstance getCurrentLoginedUser].token isEqualToString:@""]){
+        [dic setValue:[KWLoginedManager.shareInstance getCurrentLoginedUser].token forKey:@"token"];
+    }
     return dic;
 }
 #pragma mark - **************** 公开方法 ****************
