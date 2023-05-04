@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BF6834921DFAFDA883B86C6 /* libPods-WMBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E89EABCC77A5962AC62A701 /* libPods-WMBase.a */; };
+		9A0212E12A03E4D600422892 /* UIViewController+MM_configNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A0212E02A03E4D600422892 /* UIViewController+MM_configNet.m */; };
 		9A6694D42A039C53000AE75F /* TT_BaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6694432A039C52000AE75F /* TT_BaseCollectionViewCell.m */; };
 		9A6694D52A039C53000AE75F /* XXX_ToolWKData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6694452A039C52000AE75F /* XXX_ToolWKData.m */; };
 		9A6694D62A039C53000AE75F /* UIDevice+StateHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6694462A039C52000AE75F /* UIDevice+StateHeight.m */; };
@@ -77,7 +78,6 @@
 		9A6695372A03B469000AE75F /* UCMHttpRequestNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6695322A03B469000AE75F /* UCMHttpRequestNetworkManager.m */; };
 		9A75429A2A0347CD0048C774 /* UCMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7542992A0347CD0048C774 /* UCMViewController.m */; };
 		9A8369792A03651D00E0DA39 /* UCMBaseC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8369782A03651D00E0DA39 /* UCMBaseC.m */; };
-		9A9364242A03C9E90015E7D5 /* UIViewController+MM_configNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9364222A03C9E90015E7D5 /* UIViewController+MM_configNet.m */; };
 		9AA254CE2A025C3A0083EC60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA254CD2A025C3A0083EC60 /* AppDelegate.m */; };
 		9AA254D12A025C3A0083EC60 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA254D02A025C3A0083EC60 /* SceneDelegate.m */; };
 		9AA254D42A025C3A0083EC60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA254D32A025C3A0083EC60 /* ViewController.m */; };
@@ -91,6 +91,8 @@
 		06AB721C87866BD3C0854E17 /* Pods-WMBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMBase.debug.xcconfig"; path = "Target Support Files/Pods-WMBase/Pods-WMBase.debug.xcconfig"; sourceTree = "<group>"; };
 		1E89EABCC77A5962AC62A701 /* libPods-WMBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WMBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A8C6AAAD042B49E5F154C8B /* Pods-WMBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMBase.release.xcconfig"; path = "Target Support Files/Pods-WMBase/Pods-WMBase.release.xcconfig"; sourceTree = "<group>"; };
+		9A0212DF2A03E4D600422892 /* UIViewController+MM_configNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+MM_configNet.h"; path = "WMBase/WMBase/Ucm_NetWork/UIViewController+MM_configNet.h"; sourceTree = SOURCE_ROOT; };
+		9A0212E02A03E4D600422892 /* UIViewController+MM_configNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+MM_configNet.m"; path = "WMBase/WMBase/Ucm_NetWork/UIViewController+MM_configNet.m"; sourceTree = SOURCE_ROOT; };
 		9A6694432A039C52000AE75F /* TT_BaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TT_BaseCollectionViewCell.m; sourceTree = "<group>"; };
 		9A6694442A039C52000AE75F /* YYPhotoGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYPhotoGroupView.h; sourceTree = "<group>"; };
 		9A6694452A039C52000AE75F /* XXX_ToolWKData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXX_ToolWKData.m; sourceTree = "<group>"; };
@@ -239,8 +241,6 @@
 		9A7542992A0347CD0048C774 /* UCMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCMViewController.m; sourceTree = "<group>"; };
 		9A8369772A03651D00E0DA39 /* UCMBaseC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCMBaseC.h; sourceTree = "<group>"; };
 		9A8369782A03651D00E0DA39 /* UCMBaseC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCMBaseC.m; sourceTree = "<group>"; };
-		9A9364222A03C9E90015E7D5 /* UIViewController+MM_configNet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MM_configNet.m"; sourceTree = "<group>"; };
-		9A9364232A03C9E90015E7D5 /* UIViewController+MM_configNet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MM_configNet.h"; sourceTree = "<group>"; };
 		9AA254C92A025C3A0083EC60 /* WMBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA254CC2A025C3A0083EC60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9AA254CD2A025C3A0083EC60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -424,8 +424,8 @@
 		9A6694C02A039C53000AE75F /* UC_CommonmoduleNetWork */ = {
 			isa = PBXGroup;
 			children = (
-				9A9364232A03C9E90015E7D5 /* UIViewController+MM_configNet.h */,
-				9A9364222A03C9E90015E7D5 /* UIViewController+MM_configNet.m */,
+				9A0212DF2A03E4D600422892 /* UIViewController+MM_configNet.h */,
+				9A0212E02A03E4D600422892 /* UIViewController+MM_configNet.m */,
 				9A6694C32A039C53000AE75F /* FTT_APIBaseManager.h */,
 				9A6694CB2A039C53000AE75F /* FTT_APIBaseManager.m */,
 				9A6694CC2A039C53000AE75F /* FTT_NetWorkkingManager.h */,
@@ -661,7 +661,6 @@
 				9A6694E02A039C53000AE75F /* Msg_BackNormalFooter.m in Sources */,
 				9A6694E62A039C53000AE75F /* YYPhotoGroupView.m in Sources */,
 				9A66951C2A039FFA000AE75F /* WRNavigationBar.m in Sources */,
-				9A9364242A03C9E90015E7D5 /* UIViewController+MM_configNet.m in Sources */,
 				9A6694D92A039C53000AE75F /* WKProcessPool+SharedProcessPool.m in Sources */,
 				9A6694E42A039C53000AE75F /* WeakScriptMessageDelegate.m in Sources */,
 				9A6694E52A039C53000AE75F /* TT_BaseCell.m in Sources */,
@@ -723,6 +722,7 @@
 				9A6695052A039C53000AE75F /* FTT_Helper.m in Sources */,
 				9A6694EE2A039C53000AE75F /* TT_BaseTableV.m in Sources */,
 				9A6695212A03A2F3000AE75F /* KWLoginedUserModel.m in Sources */,
+				9A0212E12A03E4D600422892 /* UIViewController+MM_configNet.m in Sources */,
 				9A66950C2A039C53000AE75F /* Current_normalTool.m in Sources */,
 				9A6694D72A039C53000AE75F /* TT_SlidedownwardTool.m in Sources */,
 				9AA254D12A025C3A0083EC60 /* SceneDelegate.m in Sources */,
