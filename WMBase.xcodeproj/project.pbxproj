@@ -63,7 +63,6 @@
 		9A66950D2A039C53000AE75F /* FTT_ShareLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6694BF2A039C53000AE75F /* FTT_ShareLayer.m */; };
 		9A66950E2A039C53000AE75F /* PPNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6694C12A039C53000AE75F /* PPNetworkHelper.m */; };
 		9A66950F2A039C53000AE75F /* FTT_NetWorkkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6694C82A039C53000AE75F /* FTT_NetWorkkingManager.m */; };
-		9A6695102A039C53000AE75F /* TT_BaseVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6694C92A039C53000AE75F /* TT_BaseVM.m */; };
 		9A6695112A039C53000AE75F /* FTT_APIBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6694CB2A039C53000AE75F /* FTT_APIBaseManager.m */; };
 		9A6695122A039C53000AE75F /* UC_CommonmoduleNetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6694CD2A039C53000AE75F /* UC_CommonmoduleNetWorkTool.m */; };
 		9A6695132A039C53000AE75F /* PPNetworkCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6694CE2A039C53000AE75F /* PPNetworkCache.m */; };
@@ -73,12 +72,12 @@
 		9A6695212A03A2F3000AE75F /* KWLoginedUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6695202A03A2F3000AE75F /* KWLoginedUserModel.m */; };
 		9A6695272A03A5A0000AE75F /* KWLoginedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6695262A03A5A0000AE75F /* KWLoginedManager.m */; };
 		9A6695332A03B469000AE75F /* UCMHttpRequestBaseVM.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6695292A03B469000AE75F /* UCMHttpRequestBaseVM.m */; };
-		9A6695342A03B469000AE75F /* UIViewController+MM_configNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A66952B2A03B469000AE75F /* UIViewController+MM_configNet.m */; };
 		9A6695352A03B469000AE75F /* UCMHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6695302A03B469000AE75F /* UCMHttpRequest.m */; };
 		9A6695362A03B469000AE75F /* UCMHttpRequestResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6695312A03B469000AE75F /* UCMHttpRequestResponse.m */; };
 		9A6695372A03B469000AE75F /* UCMHttpRequestNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6695322A03B469000AE75F /* UCMHttpRequestNetworkManager.m */; };
 		9A75429A2A0347CD0048C774 /* UCMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7542992A0347CD0048C774 /* UCMViewController.m */; };
 		9A8369792A03651D00E0DA39 /* UCMBaseC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A8369782A03651D00E0DA39 /* UCMBaseC.m */; };
+		9A9364242A03C9E90015E7D5 /* UIViewController+MM_configNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9364222A03C9E90015E7D5 /* UIViewController+MM_configNet.m */; };
 		9AA254CE2A025C3A0083EC60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA254CD2A025C3A0083EC60 /* AppDelegate.m */; };
 		9AA254D12A025C3A0083EC60 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA254D02A025C3A0083EC60 /* SceneDelegate.m */; };
 		9AA254D42A025C3A0083EC60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AA254D32A025C3A0083EC60 /* ViewController.m */; };
@@ -205,14 +204,12 @@
 		9A6694BE2A039C53000AE75F /* Current_normalTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Current_normalTool.m; sourceTree = "<group>"; };
 		9A6694BF2A039C53000AE75F /* FTT_ShareLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTT_ShareLayer.m; sourceTree = "<group>"; };
 		9A6694C12A039C53000AE75F /* PPNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPNetworkHelper.m; sourceTree = "<group>"; };
-		9A6694C22A039C53000AE75F /* TT_BaseVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TT_BaseVM.h; sourceTree = "<group>"; };
 		9A6694C32A039C53000AE75F /* FTT_APIBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTT_APIBaseManager.h; sourceTree = "<group>"; };
 		9A6694C42A039C53000AE75F /* HZY_UploadFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HZY_UploadFile.h; sourceTree = "<group>"; };
 		9A6694C52A039C53000AE75F /* UC_CommonmoduleNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UC_CommonmoduleNetWork.h; sourceTree = "<group>"; };
 		9A6694C62A039C53000AE75F /* PPNetworkCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkCache.h; sourceTree = "<group>"; };
 		9A6694C72A039C53000AE75F /* UC_CommonmoduleNetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UC_CommonmoduleNetWorkTool.h; sourceTree = "<group>"; };
 		9A6694C82A039C53000AE75F /* FTT_NetWorkkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTT_NetWorkkingManager.m; sourceTree = "<group>"; };
-		9A6694C92A039C53000AE75F /* TT_BaseVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TT_BaseVM.m; sourceTree = "<group>"; };
 		9A6694CA2A039C53000AE75F /* PPNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPNetworkHelper.h; sourceTree = "<group>"; };
 		9A6694CB2A039C53000AE75F /* FTT_APIBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FTT_APIBaseManager.m; sourceTree = "<group>"; };
 		9A6694CC2A039C53000AE75F /* FTT_NetWorkkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FTT_NetWorkkingManager.h; sourceTree = "<group>"; };
@@ -232,11 +229,9 @@
 		9A6695262A03A5A0000AE75F /* KWLoginedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWLoginedManager.m; sourceTree = "<group>"; };
 		9A6695292A03B469000AE75F /* UCMHttpRequestBaseVM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCMHttpRequestBaseVM.m; sourceTree = "<group>"; };
 		9A66952A2A03B469000AE75F /* UCMHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCMHttpRequest.h; sourceTree = "<group>"; };
-		9A66952B2A03B469000AE75F /* UIViewController+MM_configNet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MM_configNet.m"; sourceTree = "<group>"; };
 		9A66952C2A03B469000AE75F /* UCMHttpRequestNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCMHttpRequestNetworkManager.h; sourceTree = "<group>"; };
 		9A66952D2A03B469000AE75F /* UCMHttpRequestResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCMHttpRequestResponse.h; sourceTree = "<group>"; };
 		9A66952E2A03B469000AE75F /* UCMHttpRequestBaseVM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCMHttpRequestBaseVM.h; sourceTree = "<group>"; };
-		9A66952F2A03B469000AE75F /* UIViewController+MM_configNet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MM_configNet.h"; sourceTree = "<group>"; };
 		9A6695302A03B469000AE75F /* UCMHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCMHttpRequest.m; sourceTree = "<group>"; };
 		9A6695312A03B469000AE75F /* UCMHttpRequestResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCMHttpRequestResponse.m; sourceTree = "<group>"; };
 		9A6695322A03B469000AE75F /* UCMHttpRequestNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCMHttpRequestNetworkManager.m; sourceTree = "<group>"; };
@@ -244,6 +239,8 @@
 		9A7542992A0347CD0048C774 /* UCMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCMViewController.m; sourceTree = "<group>"; };
 		9A8369772A03651D00E0DA39 /* UCMBaseC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCMBaseC.h; sourceTree = "<group>"; };
 		9A8369782A03651D00E0DA39 /* UCMBaseC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCMBaseC.m; sourceTree = "<group>"; };
+		9A9364222A03C9E90015E7D5 /* UIViewController+MM_configNet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MM_configNet.m"; sourceTree = "<group>"; };
+		9A9364232A03C9E90015E7D5 /* UIViewController+MM_configNet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MM_configNet.h"; sourceTree = "<group>"; };
 		9AA254C92A025C3A0083EC60 /* WMBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA254CC2A025C3A0083EC60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9AA254CD2A025C3A0083EC60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -427,21 +424,21 @@
 		9A6694C02A039C53000AE75F /* UC_CommonmoduleNetWork */ = {
 			isa = PBXGroup;
 			children = (
-				9A6694C12A039C53000AE75F /* PPNetworkHelper.m */,
-				9A6694C22A039C53000AE75F /* TT_BaseVM.h */,
+				9A9364232A03C9E90015E7D5 /* UIViewController+MM_configNet.h */,
+				9A9364222A03C9E90015E7D5 /* UIViewController+MM_configNet.m */,
 				9A6694C32A039C53000AE75F /* FTT_APIBaseManager.h */,
-				9A6694C42A039C53000AE75F /* HZY_UploadFile.h */,
-				9A6694C52A039C53000AE75F /* UC_CommonmoduleNetWork.h */,
-				9A6694C62A039C53000AE75F /* PPNetworkCache.h */,
-				9A6694C72A039C53000AE75F /* UC_CommonmoduleNetWorkTool.h */,
-				9A6694C82A039C53000AE75F /* FTT_NetWorkkingManager.m */,
-				9A6694C92A039C53000AE75F /* TT_BaseVM.m */,
-				9A6694CA2A039C53000AE75F /* PPNetworkHelper.h */,
 				9A6694CB2A039C53000AE75F /* FTT_APIBaseManager.m */,
 				9A6694CC2A039C53000AE75F /* FTT_NetWorkkingManager.h */,
-				9A6694CD2A039C53000AE75F /* UC_CommonmoduleNetWorkTool.m */,
-				9A6694CE2A039C53000AE75F /* PPNetworkCache.m */,
+				9A6694C82A039C53000AE75F /* FTT_NetWorkkingManager.m */,
+				9A6694C42A039C53000AE75F /* HZY_UploadFile.h */,
 				9A6694CF2A039C53000AE75F /* HZY_UploadFile.m */,
+				9A6694C62A039C53000AE75F /* PPNetworkCache.h */,
+				9A6694CE2A039C53000AE75F /* PPNetworkCache.m */,
+				9A6694CA2A039C53000AE75F /* PPNetworkHelper.h */,
+				9A6694C12A039C53000AE75F /* PPNetworkHelper.m */,
+				9A6694C52A039C53000AE75F /* UC_CommonmoduleNetWork.h */,
+				9A6694C72A039C53000AE75F /* UC_CommonmoduleNetWorkTool.h */,
+				9A6694CD2A039C53000AE75F /* UC_CommonmoduleNetWorkTool.m */,
 			);
 			path = UC_CommonmoduleNetWork;
 			sourceTree = "<group>";
@@ -479,8 +476,6 @@
 				9A6695322A03B469000AE75F /* UCMHttpRequestNetworkManager.m */,
 				9A66952D2A03B469000AE75F /* UCMHttpRequestResponse.h */,
 				9A6695312A03B469000AE75F /* UCMHttpRequestResponse.m */,
-				9A66952F2A03B469000AE75F /* UIViewController+MM_configNet.h */,
-				9A66952B2A03B469000AE75F /* UIViewController+MM_configNet.m */,
 			);
 			name = UCM_NetWork;
 			path = ../../../../CODE/westkissMob/westkissMob/westkissMob/Tool/UCM_NetWork;
@@ -666,6 +661,7 @@
 				9A6694E02A039C53000AE75F /* Msg_BackNormalFooter.m in Sources */,
 				9A6694E62A039C53000AE75F /* YYPhotoGroupView.m in Sources */,
 				9A66951C2A039FFA000AE75F /* WRNavigationBar.m in Sources */,
+				9A9364242A03C9E90015E7D5 /* UIViewController+MM_configNet.m in Sources */,
 				9A6694D92A039C53000AE75F /* WKProcessPool+SharedProcessPool.m in Sources */,
 				9A6694E42A039C53000AE75F /* WeakScriptMessageDelegate.m in Sources */,
 				9A6694E52A039C53000AE75F /* TT_BaseCell.m in Sources */,
@@ -684,7 +680,6 @@
 				9A6695062A039C53000AE75F /* TT_CustonTF.m in Sources */,
 				9A6695132A039C53000AE75F /* PPNetworkCache.m in Sources */,
 				9A6694DC2A039C53000AE75F /* TT_BaseV.m in Sources */,
-				9A6695342A03B469000AE75F /* UIViewController+MM_configNet.m in Sources */,
 				9A6694DF2A039C53000AE75F /* TT_NothingV.m in Sources */,
 				9A6695332A03B469000AE75F /* UCMHttpRequestBaseVM.m in Sources */,
 				9A6694F22A039C53000AE75F /* NSString+URL.m in Sources */,
@@ -720,7 +715,6 @@
 				9A6694FD2A039C53000AE75F /* FTT_ButtonModule.m in Sources */,
 				9A6694D52A039C53000AE75F /* XXX_ToolWKData.m in Sources */,
 				9A6694EB2A039C53000AE75F /* TT_BaseScrollView.m in Sources */,
-				9A6695102A039C53000AE75F /* TT_BaseVM.m in Sources */,
 				9A6694F62A039C53000AE75F /* TT_DarkmodeTool.m in Sources */,
 				9A6695082A039C53000AE75F /* FTT_AttributedString.m in Sources */,
 				9A8369792A03651D00E0DA39 /* UCMBaseC.m in Sources */,
