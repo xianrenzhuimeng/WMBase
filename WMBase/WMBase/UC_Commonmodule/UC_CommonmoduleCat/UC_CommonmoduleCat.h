@@ -12,15 +12,15 @@
 
 
 
-#if __has_include(<UC_CommonmoduleCat/UC_CommonmoduleCat.h>)
+#if __has_include(<WMBase/UC_CommonmoduleCat.h>)
 
-#import <UC_CommonmoduleCat/UIImage+Rotate.h>
-#import <UC_CommonmoduleCat/UIColor+Categpry.h>
-#import <UC_CommonmoduleCat/NSString+URL.h>
-#import <UC_CommonmoduleCat/NSDictionary+PropertyCode.h>
-#import <UC_CommonmoduleCat/SYBJ_ColorS.h>
-#import <UC_CommonmoduleCat/UIViewController+HUD.h>
-#import <UC_CommonmoduleCat/NSDate+YYadd.h>
+#import <WMBase/UIImage+Rotate.h>
+#import <WMBase/UIColor+Categpry.h>
+#import <WMBase/NSString+URL.h>
+#import <WMBase/NSDictionary+PropertyCode.h>
+#import <WMBase/SYBJ_ColorS.h>
+#import <WMBase/UIViewController+HUD.h>
+#import <WMBase/NSDate+YYadd.h>
 
 #else
 #import "UIImage+Rotate.h"

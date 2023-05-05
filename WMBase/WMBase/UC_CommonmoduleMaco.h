@@ -10,13 +10,13 @@
 
 
 
-#if __has_include(<UC_Commonmodule/UC_CommonmoduleMaco.h>)
+#if __has_include(<WMBase/UC_CommonmoduleMaco.h>)
 
-#import <UC_Commonmodule/TT_GeneralProfile.h>
-#import <UC_Commonmodule/UC_CommonmoduleCat.h>
-#import <UC_Commonmodule/UC_CommonmoduleKit.h>
-#import <UC_Commonmodule/UC_CommonmoduleNetWork.h>
-#import <UC_Commonmodule/UC_CommonmoduleTool.h>
+#import <WMBase/TT_GeneralProfile.h>
+#import <WMBase/UC_CommonmoduleCat.h>
+#import <WMBase/UC_CommonmoduleKit.h>
+#import <WMBase/UC_CommonmoduleNetWork.h>
+#import <WMBase/UC_CommonmoduleTool.h>
 
 #else
 #import "TT_GeneralProfile.h"

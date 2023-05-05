@@ -9,13 +9,13 @@
 #define UC_CommonmoduleNetWork_h
 
 
-#if __has_include(<UC_CommonmoduleNetWork/UC_CommonmoduleNetWork.h>)
-#import <UC_CommonmoduleNetWork/UIViewController+MM_configNet.h>
-#import <UC_CommonmoduleNetWork/HZY_UploadFile.h>
-#import <UC_CommonmoduleNetWork/FTT_NetWorkkingManager.h>
-#import <UC_CommonmoduleNetWork/UC_CommonmoduleNetWorkTool.h>
-#import <UC_CommonmoduleNetWork/PPNetworkHelper.h>
-#import <UC_CommonmoduleNetWork/PPNetworkCache.h>
+#if __has_include(<WMBase/UC_CommonmoduleNetWork.h>)
+#import <WMBase/UIViewController+MM_configNet.h>
+#import <WMBase/HZY_UploadFile.h>
+#import <WMBase/FTT_NetWorkkingManager.h>
+#import <WMBase/UC_CommonmoduleNetWorkTool.h>
+#import <WMBase/PPNetworkHelper.h>
+#import <WMBase/PPNetworkCache.h>
 
 
 #else

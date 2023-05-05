@@ -13,28 +13,27 @@
 
 
 
-#if __has_include(<UC_CommonmoduleTool/UC_CommonmoduleTool.h>)
+#if __has_include(<WMBase/UC_CommonmoduleTool.h>)
 
-#import <UC_CommonmoduleTool/Current_normalTool.h>
-#import <UC_CommonmoduleTool/DataUtil.h>
-#import <UC_CommonmoduleTool/FTT_AnimationTool.h>
-#import <UC_CommonmoduleTool/FTT_ArcRotateV.h>
-#import <UC_CommonmoduleTool/FTT_BombBox.h>
-#import <UC_CommonmoduleTool/FTT_ButtonModule.h>
-#import <UC_CommonmoduleTool/FTT_Helper.h>
-#import <UC_CommonmoduleTool/FTT_HudTool.h>
-#import <UC_CommonmoduleTool/FTT_LoadConfig.h>
-#import <UC_CommonmoduleTool/FTT_ShareLayer.h>
-#import <UC_CommonmoduleTool/HWCookiesManager.h>
-#import <UC_CommonmoduleTool/TSShareHelper.h>
-#import <UC_CommonmoduleTool/TT_ControlTool.h>
-#import <UC_CommonmoduleTool/TT_Custonbtn.h>
-#import <UC_CommonmoduleTool/TT_CustonTF.h>
-#import <UC_CommonmoduleTool/TT_DarkmodeTool.h>
-#import <UC_CommonmoduleTool/UIButton+SDCategory.h>
-#import <UC_CommonmoduleTool/UIImageView+SDCategory.h>
-#import <UC_CommonmoduleTool/XXX_CurrentTool.h>
-#import <UC_CommonmoduleTool/XXX_Datautil.h>
+#import <WMBase/Current_normalTool.h>
+#import <WMBase/DataUtil.h>
+#import <WMBase/FTT_AnimationTool.h>
+#import <WMBase/FTT_ArcRotateV.h>
+#import <WMBase/FTT_BombBox.h>
+#import <WMBase/FTT_ButtonModule.h>
+#import <WMBase/FTT_Helper.h>
+#import <WMBase/FTT_HudTool.h>
+#import <WMBase/FTT_LoadConfig.h>
+#import <WMBase/FTT_ShareLayer.h>
+#import <WMBase/HWCookiesManager.h>
+#import <WMBase/TSShareHelper.h>
+#import <WMBase/TT_ControlTool.h>
+#import <WMBase/TT_Custonbtn.h>
+#import <WMBase/TT_CustonTF.h>
+#import <WMBase/TT_DarkmodeTool.h>
+#import <WMBase/UIButton+SDCategory.h>
+#import <WMBase/UIImageView+SDCategory.h>
+#import <WMBase/XXX_Datautil.h>
 
 #else
 

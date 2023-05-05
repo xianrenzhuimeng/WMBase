@@ -11,32 +11,32 @@
 
 
 
-#if __has_include(<UC_CommonmoduleKit/UC_CommonmoduleKit.h>)
+#if __has_include(<WMBase/UC_CommonmoduleKit.h>)
 
-#import <UC_CommonmoduleKit/Msg_BackNormalFooter.h>
-#import <UC_CommonmoduleCat/TT_BaceProtocol.h>
-#import <UC_CommonmoduleCat/TT_BaseC.h>
-#import <UC_CommonmoduleCat/TT_BaseCell.h>
-#import <UC_CommonmoduleKit/TT_BaseCollectionV.h>
-#import <UC_CommonmoduleKit/TT_BaseCollectionViewCell.h>
-#import <UC_CommonmoduleKit/TT_BaseModel.h>
-#import <UC_CommonmoduleKit/TT_BaseScrollView.h>
-#import <UC_CommonmoduleKit/TT_BaseTableV.h>
-#import <UC_CommonmoduleKit/TT_BaseV.h>
-#import <UC_CommonmoduleKit/TT_CycleCollectionViewFlowLayout.h>
-#import <UC_CommonmoduleKit/TT_Lable.h>
-#import <UC_CommonmoduleKit/TT_MongoliaV.h>
-#import <UC_CommonmoduleKit/TT_NothingV.h>
-#import <UC_CommonmoduleKit/TT_ProgressV.h>
-#import <UC_CommonmoduleKit/TT_SlidedownwardTool.h>
-#import <UC_CommonmoduleKit/TT_TextV.h>
-#import <UC_CommonmoduleKit/TT_ViewAppearOrdisappear.h>
-#import <UC_CommonmoduleKit/TT_WKweb.h>
-#import <UC_CommonmoduleKit/UIViewController+TT_configV.h>
-#import <UC_CommonmoduleKit/WeakScriptMessageDelegate.h>
-#import <UC_CommonmoduleKit/WKProcessPool+SharedProcessPool.h>
-#import <UC_CommonmoduleKit/XXX_ToolWKData.h>
-#import <UC_CommonmoduleKit/UIDevice+StateHeight.h">
+#import <WMBase/Msg_BackNormalFooter.h>
+#import <WMBase/TT_BaceProtocol.h>
+#import <WMBase/TT_BaseC.h>
+#import <WMBase/TT_BaseCell.h>
+#import <WMBase/TT_BaseCollectionV.h>
+#import <WMBase/TT_BaseCollectionViewCell.h>
+#import <WMBase/TT_BaseModel.h>
+#import <WMBase/TT_BaseScrollView.h>
+#import <WMBase/TT_BaseTableV.h>
+#import <WMBase/TT_BaseV.h>
+#import <WMBase/TT_CycleCollectionViewFlowLayout.h>
+#import <WMBase/TT_Lable.h>
+#import <WMBase/TT_MongoliaV.h>
+#import <WMBase/TT_NothingV.h>
+#import <WMBase/TT_ProgressV.h>
+#import <WMBase/TT_SlidedownwardTool.h>
+#import <WMBase/TT_TextV.h>
+#import <WMBase/TT_ViewAppearOrdisappear.h>
+#import <WMBase/TT_WKweb.h>
+#import <WMBase/UIViewController+TT_configV.h>
+#import <WMBase/WeakScriptMessageDelegate.h>
+#import <WMBase/WKProcessPool+SharedProcessPool.h>
+#import <WMBase/XXX_ToolWKData.h>
+#import <WMBase/UIDevice+StateHeight.h">
 
 
 #else
