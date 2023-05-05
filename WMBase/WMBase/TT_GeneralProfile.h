@@ -10,6 +10,7 @@
 #define TT_GeneralProfile_h
 
 #import <UIKit/UIKit.h>
+#import "CTMediator+Targets.h"
 
 
 #pragma mark - *********** 字体名称 **************

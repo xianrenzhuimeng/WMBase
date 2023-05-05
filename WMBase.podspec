@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "WMBase"
-  s.version      = "1.0.7"
+  s.version      = "1.0.8"
   s.summary      = "WMBaseSDk"
 
   # This description is used to generate tags and improve search results.
@@ -135,7 +135,6 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "BLNetworking"
   # s.dependency "BLAPIManagers"
-  s.dependency "AFNetworking"
   s.dependency "Masonry"
   s.dependency "MJRefresh"
   s.dependency "MJExtension"
@@ -145,5 +144,6 @@ Pod::Spec.new do |s|
   s.dependency "YTKNetwork"
   s.dependency "QMUIKit"
   s.dependency "Toast"
+  s.dependency "CTMediator"
 
 end
