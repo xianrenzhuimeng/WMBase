@@ -245,13 +245,7 @@
     cell.is_select = YES;
 }
 
-- (void)tengteng_configNothingVishide:(BOOL)ishide {
-    if (ishide) {
-        [self.NothingV removeFromSuperview];
-    }else {
-        [self addSubview:self.NothingV];
-    }
-}
+
 - (void)generaltriggermethodType:(NSInteger)type data:(id)data {
     if (self.tapClose) {
         self.tapClose(type, data);
@@ -396,12 +390,7 @@
     return _BigTitleV;
 }
 
-- (TT_NothingV *)NothingV {
-    if (!_NothingV) {
-        _NothingV = [[TT_NothingV alloc]initWithFrame:self.bounds];
-    }
-    return _NothingV;
-}
+
 
 - (NSMutableArray *)infodata {
     if (!_infodata) {

@@ -175,7 +175,7 @@
         [_customNavBar wr_setBottomLineHidden:YES];
         _customNavBar.titleLabelFont = [UIFont fontWithName:Rob_Medium size:20];
         _customNavBar.titleLabelColor = [UIColor blackColor];
-        _customNavBar.barBackgroundColor = [UIColor colorWithHexString:@"#FFF8F9"];
+        _customNavBar.barBackgroundColor = [UIColor qmui_colorWithHexString:@"#FFF8F9"];
     }
     return _customNavBar;
 }

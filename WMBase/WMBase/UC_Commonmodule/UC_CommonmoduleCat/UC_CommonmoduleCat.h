@@ -20,15 +20,16 @@
 #import <UC_CommonmoduleCat/NSDictionary+PropertyCode.h>
 #import <UC_CommonmoduleCat/SYBJ_ColorS.h>
 #import <UC_CommonmoduleCat/UIViewController+HUD.h>
-#import <YYKit/YYKit.h>
+#import <UC_CommonmoduleCat/NSDate+YYadd.h>
+
 #else
 #import "UIImage+Rotate.h"
 #import "UIColor+Categpry.h"
 #import "NSString+URL.h"
 #import "NSDictionary+PropertyCode.h"
 #import "SYBJ_ColorS.h"
-#import "YYKit.h"
 #import "UIViewController+HUD.h"
+#import "NSDate+YYadd.h"
 #endif
 
 

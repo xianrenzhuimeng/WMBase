@@ -10,7 +10,7 @@
 #import "TT_DarkmodeTool.h"
 #import "DataUtil.h"
 #import <WebKit/WebKit.h>
-#import "TT_GifV.h"
+#import <QMUIKit/QMUIKit.h>
 
 #import <objc/runtime.h>
 #import <CoreTelephony/CTTelephonyNetworkInfo.h>
@@ -725,7 +725,7 @@ static char encodingTable[64] = {
         return [UIColor clearColor];
     }
     if ([rgbaStr hasPrefix:@"#"]) {
-        return [UIColor colorWithHexString:rgbaStr];
+        return [UIColor qmui_colorWithHexString:rgbaStr];
     }
     NSMutableString * mulStr = [NSMutableString stringWithString:rgbaStr];
     [mulStr deleteCharactersInRange:NSMakeRange(0, 5)];
@@ -827,14 +827,6 @@ static char encodingTable[64] = {
     return newImage;
 }
 
-//显示加载视图
-+ (void)showCustomLoadingView {
-    [[TT_GifV share_tool] setupYYImageView];
-}
-
-+ (void)dismiss {
-    [[TT_GifV share_tool]dismiss];
-}
 
 //编码URL 只编码当中的中文字符
 + (NSString *)encodeURLWithChineseChar:(NSString *)string{

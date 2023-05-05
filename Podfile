@@ -10,7 +10,7 @@ target 'WMBase' do
   pod 'Masonry'
   pod 'MJRefresh'
   pod 'MJExtension'
-  pod 'YYKit'
+  pod 'YYCache'
   pod 'MBProgressHUD'
   pod 'SDWebImage'
   pod 'YTKNetwork'

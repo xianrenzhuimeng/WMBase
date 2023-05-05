@@ -112,10 +112,8 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIImage *)imageWithTitle:(NSString *)title fontSize:(CGFloat)fontSize drawImg:(UIImage *)drawImg;
 //清楚网也缓存
 + (void)clearHTMLCache;
-//显示加载视图
-+ (void)showCustomLoadingView;
-/// 关闭动画
-+ (void)dismiss;
+
+
 //编码URL 只编码当中的中文字符
 + (NSString *)encodeURLWithChineseChar:(NSString *)string;
 //按照给定的大小压缩图片

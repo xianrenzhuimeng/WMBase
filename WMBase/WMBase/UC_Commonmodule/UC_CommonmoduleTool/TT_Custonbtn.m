@@ -7,7 +7,7 @@
 //
 
 #import "TT_Custonbtn.h"
-#import "Create_Tool.h"
+
 #import "XXX_Datautil.h"
 @implementation TT_Custonbtn
 
@@ -54,15 +54,7 @@
 }
 
 
-- (void)comfigurlImagurl:(NSString *)imageurl {
-    [self.imageView setImageWithURL:[NSURL URLWithString:imageurl]
-                        placeholder:[XXX_Datautil configLoadIMG]
-                            options:YYWebImageOptionSetImageWithFadeAnimation
-                            manager:[Create_Tool ImageManager]
-                           progress:nil
-                          transform:nil
-                         completion:nil];
-}
+
 
 
 - (void)setIs_geust:(BOOL)is_geust {

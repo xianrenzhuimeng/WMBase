@@ -31,8 +31,7 @@
 #define AD_OPEN_SCREEN_IOS @"AD_OPEN_SCREEN_IOS"
 /// 激励
 #define AD_EXCITATION_VIDEO_IOS @"AD_EXCITATION_VIDEO_IOS"
-//所有的图片占位图
-#define SD_LoadImg   [XXX_Datautil configLoadIMG]
+
 
 #define SD_Normal    [UIImage imageNamed:@"UnLoadImage"]
 
@@ -47,12 +46,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface XXX_Datautil : NSObject
-
-/// 获取加载图片
-+ (UIImage *)configLoadIMG;
-/// 计算图片的高度
-+ (CGFloat )xxx_configImageformethodwithimageW:(CGFloat)W
-                                      ImageUrl:(NSString *)ImageUrl;
 
 /// 返回字典对应的key
 + (id)configDic:(NSDictionary *)dic

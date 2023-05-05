@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <MJRefresh/MJRefresh.h>
 #import "TT_TitleV.h"
-#import "TT_NothingV.h"
 #import "TT_BaseCell.h"
 #import "TT_GeneralProfile.h"
 
@@ -73,8 +72,7 @@
 @property (nonatomic , assign) NSInteger pushOrpull;
 /// 是否上啦加载
 @property (nonatomic , assign) BOOL ispullload;
-/// 空数据界面
-@property (nonatomic , strong) TT_NothingV *NothingV;
+
 /// 大标题
 @property (nonatomic , strong) TT_TitleV *BigTitleV;
 /// 创建table
@@ -99,8 +97,7 @@
 //- (void)configPagewithData:(NSMutableArray *)Data YorN:(BOOL)YorN;
 /// 点击cell 状态改变
 - (void)cellselectStatechangeIndex:(NSIndexPath *)index;
-/// 显示空数据界面
-- (void)tengteng_configNothingVishide:(BOOL)ishide;
+
 /// 回调通用方法
 - (void)generaltriggermethodType:(NSInteger)type data:(id)data;
 - (void)scroloffY:(CGFloat)Y;

@@ -25,7 +25,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <YYKit/YYKit.h>
+#import <YYCache/YYCache.h>
 #import "UC_CommonmoduleNetWorkTool.h"
 // 过期提醒
 #define PPDeprecated(instead) NS_DEPRECATED(2_0, 2_0, 2_0, 2_0, instead)

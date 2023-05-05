@@ -36,7 +36,6 @@ typedef NS_ENUM( NSInteger ,UIButtonTitleAndImageType ) {
 
 @property (nonatomic , assign) BOOL is_geust;
 
-- (void)comfigurlImagurl:(NSString *)imageurl;
 
 
 

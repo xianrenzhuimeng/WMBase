@@ -8,7 +8,7 @@
 
 #import "TT_NothingV.h"
 #import "UC_CommonmoduleTool.h"
-#import <YYKit/YYKit.h>
+
 @interface TT_NothingV ()
 
 @end
